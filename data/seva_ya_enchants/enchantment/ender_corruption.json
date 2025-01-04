@@ -35,7 +35,7 @@
         },
         "effect": {
           "type": "minecraft:run_function",
-          "function": "seva_ya_enchants:freeze"
+          "function": "seva_ya_enchants:ender_corruption_on_hit"
         },
         "enchanted": "attacker",
         "affected": "victim"
