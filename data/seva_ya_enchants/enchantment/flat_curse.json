@@ -1,0 +1,32 @@
+{
+  "anvil_cost": 8,
+  "description": {
+    "translate": "enchantment.seva_ya_enchants.flat_curse",
+    "fallback": "Curse of Flat"
+  },
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:step_height",
+        "id": "curse_of_flat",
+        "amount": -1,
+        "operation": "add_multiplied_total"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "armor"
+  ],
+  "exclusive_set": "#seva_ya_enchants:step_height_changing",
+  "supported_items": "#minecraft:enchantable/leg_armor",
+  "weight": 1
+}
