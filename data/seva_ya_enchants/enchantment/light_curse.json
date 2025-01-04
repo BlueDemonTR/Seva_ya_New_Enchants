@@ -1,0 +1,32 @@
+{
+  "anvil_cost": 8,
+  "description": {
+    "translate": "enchantment.seva_ya_enchants.light_curse",
+    "fallback": "Curse of Light"
+  },
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:gravity",
+        "id": "curse_of_light",
+        "amount": -0.019,
+        "operation": "add_value"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "armor"
+  ],
+  "exclusive_set": "#seva_ya_enchants:gravity_changing_curse",
+  "supported_items": "#minecraft:enchantable/equippable",
+  "weight": 1
+}
