@@ -1,0 +1,44 @@
+{
+  "anvil_cost": 8,
+  "description": {
+    "translate": "enchantment.seva_ya_enchants.big_curse",
+    "fallback": "Curse of Big"
+  },
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:scale",
+        "id": "curse_of_big",
+        "amount": 0.18,
+        "operation": "add_multiplied_base"
+      },
+      {
+        "attribute": "minecraft:jump_strength",
+        "id": "curse_of_big",
+        "amount": 0.045,
+        "operation": "add_value"
+      },
+      {
+        "attribute": "minecraft:step_height",
+        "id": "curse_of_big",
+        "amount": 0.1,
+        "operation": "add_value"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "armor"
+  ],
+  "exclusive_set": "#seva_ya_enchants:size_changing_curse",
+  "supported_items": "#minecraft:enchantable/equippable",
+  "weight": 1
+}
