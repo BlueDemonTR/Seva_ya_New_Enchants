@@ -1,7 +1,7 @@
 {
   "anvil_cost": 2,
   "description": {
-    "translate": "enchantment.minecraft.humans_bane",
+    "translate": "enchantment.seva_ya_enchants.humans_bane",
     "fallback": "Humanity's Greatest Enemy"
   },
   "effects": {
@@ -40,5 +40,5 @@
     "mainhand"
   ],
   "supported_items": "#minecraft:enchantable/weapon",
-  "weight": 5
+  "weight": 2
 }
