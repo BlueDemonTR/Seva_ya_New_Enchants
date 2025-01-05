@@ -1,0 +1,132 @@
+{
+  "anvil_cost": 2,
+  "description": {
+    "translate": "enchantment.seva_ya_enchants.sculk_thrive",
+    "fallback": "Sculk Thrive"
+  },
+  "effects": {
+    "minecraft:damage": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": 10
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "attacker",
+            "predicate": {
+              "location": {
+                "position": {
+                  "y": {
+                    "max": 0
+                  }
+                },
+                "biomes": "minecraft:deep_dark"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "minecraft:location_changed": [
+      {
+        "requirements": [
+          {
+            "condition": "minecraft:random_chance",
+            "chance": 0.5
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "position": {
+                  "y": {
+                    "max": 0
+                  }
+                },
+                "biomes": "minecraft:deep_dark"
+              }
+            }
+          }
+        ],
+        "effect": {
+          "type": "minecraft:spawn_particles",
+          "particle": {
+            "type": "minecraft:sculk_charge_pop"
+          },
+          "horizontal_position": {
+            "type": "entity_position",
+            "offset": 0,
+            "scale": 1
+          },
+          "vertical_position": {
+            "type": "entity_position",
+            "offset": 0,
+            "scale": 1
+          },
+          "horizontal_velocity": {
+            "base": 0,
+            "movement_scale": 0
+          },
+          "vertical_velocity": {
+            "base": 0.1,
+            "movement_scale": 1
+          },
+          "speed": 1
+        }
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "requirements": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "attacker",
+            "predicate": {
+              "location": {
+                "position": {
+                  "y": {
+                    "max": 0
+                  }
+                },
+                "biomes": "minecraft:deep_dark"
+              }
+            }
+          }
+        ],
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": [
+            "minecraft:speed",
+            "minecraft:strength",
+            "minecraft:jump_boost"
+          ],
+          "min_duration": 60,
+          "max_duration": 10,
+          "min_amplifier": 0,
+          "max_amplifier": 4
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      }
+    ]
+  },
+  "exclusive_set": "#minecraft:exclusive_set/damage",
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 8
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 8
+  },
+  "primary_items": "#minecraft:enchantable/sword",
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/sword",
+  "weight": 5
+}
