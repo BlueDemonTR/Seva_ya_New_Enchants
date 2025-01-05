@@ -1,0 +1,61 @@
+{
+  "anvil_cost": 2,
+  "description": {
+    "translate": "enchantment.seva_ya_enchants.elemental_bind",
+    "fallback": "Elemental Bind"
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "#seva_ya_enchants:affected_by_elemental_bind"
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "seva_ya_enchants:trigger_extra_drops"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ],
+    "minecraft:damage": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "#seva_ya_enchants:affected_by_elemental_bind"
+          }
+        },
+        "effect": {
+          "type": "minecraft:multiply",
+          "factor": {
+            "type": "minecraft:linear",
+            "base": 1,
+            "per_level_above_first": -0.1
+          }
+        }
+      }
+    ]
+  },
+  "exclusive_set": "#minecraft:exclusive_set/damage",
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 8
+  },
+  "max_level": 5,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 8
+  },
+  "primary_items": "#minecraft:enchantable/sword",
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/weapon",
+  "weight": 5
+}

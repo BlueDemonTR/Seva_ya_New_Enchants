@@ -33,7 +33,7 @@
         ],
         "effect": {
           "type": "minecraft:run_function",
-          "function": "seva_ya_enchants:trigger_butcher_drops"
+          "function": "seva_ya_enchants:trigger_extra_drops"
         },
         "enchanted": "attacker",
         "affected": "victim"
@@ -65,7 +65,7 @@
         ],
         "effect": {
           "type": "minecraft:run_function",
-          "function": "seva_ya_enchants:trigger_butcher_drops"
+          "function": "seva_ya_enchants:trigger_extra_drops"
         },
         "enchanted": "attacker",
         "affected": "victim"
@@ -97,7 +97,7 @@
         ],
         "effect": {
           "type": "minecraft:run_function",
-          "function": "seva_ya_enchants:trigger_butcher_drops"
+          "function": "seva_ya_enchants:trigger_extra_drops"
         },
         "enchanted": "attacker",
         "affected": "victim"
