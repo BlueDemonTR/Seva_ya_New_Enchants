@@ -1,0 +1,141 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "enchantment.seva_yan_enchants.butcher",
+    "fallback": "Butcher"
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "requirements": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "#seva_ya_enchants:affected_by_butcher"
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:enchantment_level",
+              "amount": {
+                "type": "minecraft:linear",
+                "base": 0,
+                "per_level_above_first": 1
+              }
+            },
+            "range": {
+              "min": 0,
+              "max": 5
+            }
+          }
+        ],
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "seva_ya_enchants:trigger_butcher_drops"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      },
+      {
+        "requirements": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "#seva_ya_enchants:affected_by_butcher"
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:enchantment_level",
+              "amount": {
+                "type": "minecraft:linear",
+                "base": 0,
+                "per_level_above_first": 1
+              }
+            },
+            "range": {
+              "min": 2,
+              "max": 5
+            }
+          }
+        ],
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "seva_ya_enchants:trigger_butcher_drops"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      },
+      {
+        "requirements": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "#seva_ya_enchants:affected_by_butcher"
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:enchantment_level",
+              "amount": {
+                "type": "minecraft:linear",
+                "base": 0,
+                "per_level_above_first": 1
+              }
+            },
+            "range": {
+              "min": 4,
+              "max": 5
+            }
+          }
+        ],
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "seva_ya_enchants:trigger_butcher_drops"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ],
+    "minecraft:damage": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "#seva_ya_enchants:affected_by_butcher"
+          }
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 2,
+            "per_level_above_first": 2
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 9
+  },
+  "max_level": 5,
+  "min_cost": {
+    "base": 15,
+    "per_level_above_first": 9
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "exclusive_set": "#exclusive_set/damage",
+  "supported_items": "#minecraft:enchantable/sword",
+  "weight": 2
+}
