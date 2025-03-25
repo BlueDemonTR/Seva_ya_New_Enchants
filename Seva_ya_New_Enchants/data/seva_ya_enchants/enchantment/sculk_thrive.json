@@ -21,8 +21,7 @@
                   "y": {
                     "max": 0
                   }
-                },
-                "biomes": "minecraft:deep_dark"
+                }
               }
             }
           }
@@ -45,8 +44,7 @@
                   "y": {
                     "max": 0
                   }
-                },
-                "biomes": "minecraft:deep_dark"
+                }
               }
             }
           }
@@ -101,7 +99,7 @@
           "to_apply": [
             "minecraft:speed",
             "minecraft:strength",
-            "minecraft:jump_boost"
+            "minecraft:regeneration"
           ],
           "min_duration": 60,
           "max_duration": 10,
