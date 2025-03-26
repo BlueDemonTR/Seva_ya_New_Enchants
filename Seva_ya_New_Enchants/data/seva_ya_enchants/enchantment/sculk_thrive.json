@@ -88,8 +88,7 @@
                   "y": {
                     "max": 0
                   }
-                },
-                "biomes": "minecraft:deep_dark"
+                }
               }
             }
           }
@@ -101,10 +100,10 @@
             "minecraft:strength",
             "minecraft:regeneration"
           ],
-          "min_duration": 60,
-          "max_duration": 10,
+          "min_duration": 2,
+          "max_duration": 5,
           "min_amplifier": 0,
-          "max_amplifier": 4
+          "max_amplifier": 2
         },
         "enchanted": "attacker",
         "affected": "attacker"
